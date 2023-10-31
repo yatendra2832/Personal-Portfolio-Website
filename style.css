@@ -27,7 +27,64 @@ nav ul li{
     font-weight: bold;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    color:red;
+    transition: 0.3 ease;
+}
+
 .left{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 }
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin:80px 0;
+    align-items: center;
+}
+
+.firstSection  >  div{
+    width: 30%;
+}
+.leftSection{
+/* background-color: red; */
+font-size: 3rem;
+/* margin:70px 0; */
+}
+ 
+.rightSection img{
+    width:80%; 
+}
+
+.purple{
+    /* color:rgb(245, 161, 245); */
+    color: rgb(207, 25, 235);
+
+}
+
+
+#element{
+    color: rgb(207, 25, 235);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
