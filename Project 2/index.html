@@ -6,7 +6,7 @@
     <title>Personal Portfolio Website YS</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
     <script
       src="https://kit.fontawesome.com/f0c52e6884.js"
       crossorigin="anonymous"
@@ -17,14 +17,16 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img class="logo" src="/Personal Portfolio/logo.png" alt="Logo" />
-          <ul>
+          <img class="logo" src="/Project 2/logo.png" alt="Logo" />
+          <ul id="sideMenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark close-icon" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars menu-bar" onclick="openMenu()"></i>
         </nav>
 
         <div class="header-text">
@@ -43,9 +45,9 @@
         <div class="row">
           <div class="about-col-1">
             <img
-              src="/Personal Portfolio/ys.jpg"
+              src="/Project 2/ys.jpg"
               alt="userImage"
-              width="400px"
+              width="300px"
               height="400px"
             />
           </div>
@@ -150,8 +152,105 @@
     </div>
     <!-- Services Section End -->
     <!-- Portfolio -->
-
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/Project 2/work1.png" alt="work1" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The App connects you to the talented people around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Project 2/work2.png" alt="work2" />
+            <div class="layer">
+              <h3>e Commerce Website</h3>
+              <p>
+                The App that provide you the best products around the world.
+                Download it from the play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/Project 2/work3.png" alt="work3" />
+            <div class="layer">
+              <h3>Design Work</h3>
+              <p>Differnet types of Design Web Desing , UI/UX , App Desing</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
     <!-- Portfolio End -->
+    <!-- Contact  form start-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> contact@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>8750145379</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
 
+              <a href="https://instagram.com" class="social-icons"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+
+              <a href="https://linkedIn.com" class="social-icons"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+
+              <a href="https://youtube.com" class="social-icons"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+
+              <a href="https://github.com" class="social-icons"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="/Project 2/Resume.png" download class="btn btn2">Download CV</a>
+            
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Yatendra . Made by Yatendra Yadav <i class="fa-solid fa-code"></i>
+          </p>
+      </div>
+    </div>
+    <!-- Contact Form End -->
+    <script src="/Project 2/index.js"></script>
   </body>
 </html>
