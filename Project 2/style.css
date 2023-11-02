@@ -1,262 +1,438 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #73060600;
-    color: white;
-    
+body {
+  background-color: #73060600;
+  color: black;
 }
-#header{
-    width:100%;
-    height: 100vh;
-    background-image: url(img2.png);
-    background-size: cover;
-    background-position: center;
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img2.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.container{
-    padding:10px 10%;
+.container {
+  padding: 10px 10%;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.logo{
-    width:120px;
-    border-radius: 45%;
-}
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin:10px 20px;
-
+.logo {
+  width: 120px;
+  border-radius: 45%;
 }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
-nav ul li a::after{
-    content: '';
-    width:0;
-    height:3px;
-    background: #ff004f;
-    position: absolute;
-    left:0;
-    bottom:-6px;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
 
-nav ul li a:hover::after{
-   
-    background-image: linear-gradient(to right, #ff6600, #3399ff);
-    width:100%;
-    transition: 0.5s ease-in-out;
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
 }
 
-.header-text{
-    margin-top: 20px;
-    font-size: 30px;
-    text-align: center;
+nav ul li a:hover::after {
+  background-image: linear-gradient(to right, #ff6600, #3399ff);
+  width: 100%;
+  transition: 0.5s ease-in-out;
 }
 
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.header-text {
+  margin-top: 150px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
 }
 /* Header CSS ends Here */
 /* About CSS starts Here */
-#about{
-    padding:80px 0;
-    color: black;
+#about {
+  padding: 80px 0;
+  color: black;
 }
 
-
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.about-col-1{
-    flex-basis:35%;
+.about-col-1 {
+  flex-basis: 35%;
 }
 
-.about-col-1 img{
-    width:100%;
-    border-radius: 15px;
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
 }
 
-.about-col-2{
-    flex-basis: 60%;
+.about-col-2 {
+  flex-basis: 60%;
 }
 
-.sub-title{
-   font-size: 40px; 
-   font-weight: 700;
-   margin:10px 0;
-   color:black;
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: black;
 }
 
-.sub-title:hover{
-    
-   text-decoration: underline;
-   transition: 0.5 ease-in-out;
+.sub-title:hover {
+  text-decoration: underline;
+  transition: 0.5 ease-in-out;
 }
 
-.about-col-2 p{
-    font-size: 18px;
+.about-col-2 p {
+  font-size: 18px;
 }
 
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px 0;
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px 0;
 }
 
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position:relative;
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
 
-.tab-links::after{
-    content:'';
-    width:0;
-    height:3px;
-    background: #0ea7ee;
-    position: absolute;
-    left:0;
-    bottom:-8px;
-    transition:0.5s;
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #0ea7ee;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
 
-.tab-links.active-link::after{
-    width:75%;
+.tab-links.active-link::after {
+  width: 75%;
 }
 
-.tab-contents ul li{
-    list-style: none;
-    margin:10px 0;
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
 }
 
-.tab-contents ul li span{
-    color:#3399ff;
-    font-size: 15px;
+.tab-contents ul li span {
+  color: #3399ff;
+  font-size: 15px;
 }
 
-.tab-contents{
-    display: none;
+.tab-contents {
+  display: none;
 }
 
-.tab-contents.active-tab{
-    display: block;
+.tab-contents.active-tab {
+  display: block;
 }
 
 /* Services Section CSS */
-#services{
-    padding:30px 0;
-    color: black;
+#services {
+  padding: 30px 0;
+  color: black;
 }
 
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top:50px;
-}
-/*The CSS code you've provided styles an element with the class .services-list and uses CSS Grid properties to create a responsive grid layout for a list of services. Let's break down how this code works:
-
-
-
-display: grid;:
-This line sets the display property of the .services-list element to grid. This property turns the element into a grid container, allowing you to use CSS Grid layout features.
-
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));:
-This line defines the columns of the grid. It uses the grid-template-columns property to specify how columns should be created. Here's what each part does:
-
-repeat(auto-fit, minmax(250px, 1fr)): This part creates a flexible grid structure.
-auto-fit tells the grid to automatically fit as many columns as possible within the available space.
-minmax(250px, 1fr) sets the minimum and maximum width for each column.
-250px is the minimum width. Each column will be at least 250 pixels wide.
-1fr is the maximum width. Each column can expand and take up available space, distributing it evenly within the container.
-This combination of auto-fit and minmax ensures that you have a responsive grid where columns adjust based on the available space, maintaining a minimum width of 250 pixels and evenly distributing any extra space among the columns.
-
-grid-gap: 40px;:
-This line sets a gap of 40 pixels between grid items. This space acts as a margin between the items in the grid, making the layout more visually appealing.
-
-margin-top: 50px;:
-This line adds a top margin of 50 pixels to the .services-list container, pushing it down from the element above it. This creates some spacing between this grid and the content above it.
-
-In summary, this CSS code creates a responsive grid layout for the .services-list element. It adjusts the number of columns based on the available space, with a minimum width of 250 pixels for each column and evenly distributes any extra space. The 40-pixel gap between items and the 50-pixel top margin provide spacing and make the layout visually attractive.
-*/
-
-.services-list div{
-background: #d8d5d5;
-padding:40px;
-font-size: 13px;
-font-weight:300;
-border-radius: 20px;
-transition: background 0.5s , transform 0.5s;
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-i{
-    font-size: 50px;
-    margin-bottom: 30px;
-    /* text-align: center; */
+.services-list div {
+  background: #d8d5d5;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.services-list i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  /* text-align: center; */
 }
 
-.services-list div a{
-    text-decoration: none;
-    color:rgb(3, 80, 156);
-    font-size: 16px;
-    margin-top: 20px;
-    display: inline-block;
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
-.services-list div:hover{
-    background-color: #ff004f;
-    transform:translateY(-10px)
+.services-list div a {
+  text-decoration: none;
+  color: rgb(3, 80, 156);
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div:hover {
+  background-color: #3399ff;
+  transform: translateY(-10px);
 }
 /* ------------------------ */
 /* Portfolio section css */
+#portfolio {
+  padding: 40px 0;
+}
 
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  padding: 10px;
+}
+.work {
+  border: 2px solid grey;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  color: black;
+}
 
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+}
+.layer p {
+  color: white;
+  font-size: 15px;
+}
 
+.layer h3 {
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
 
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
 
+.work:hover img {
+  transform: scale(1.1);
+}
 
+.work:hover .layer {
+  height: 100%;
+}
 
+.btn {
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+  border: 2px solid rgb(2, 128, 255);
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
 
+  transition: background 0.5s;
+}
 
+.btn:hover {
+  background: rgb(34, 133, 233);
+  font-weight: bolder;
+}
+/* ------------Contact form CSS-------------- */
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
 
+.contact-left p {
+  margin-top: 10px;
+}
+.contact-left p i {
+  margin: 15px;
+  color: #3399ff;
+}
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #0ea7ee;
+  display: inline-block;
+  transition: transform 0.5s;
+}
 
+.social-icons a:hover {
+  color: #3399ff;
+  transform: translateY(-5px);
+}
 
+.btn.btn2 {
+  display: inline-block;
+  background: #0ea7ee;
+  font-weight: bolder;
+}
 
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #b7b7b7;
+  padding: 15px;
+  margin: 15px 0;
+}
 
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #b2b2b2;
+  font-weight: 300;
+  margin-top: 25px;
+}
+.copyright p i {
+  color: #0ea7ee;
+  font-size: 23px;
+  border: 2px solid #0ea7ee;
+  border-radius: 5px;
+  padding: 5px;
+}
 
+/* ----------------CSS for small screen--------------------- */
+nav .fa-solid{
+ display: none;
+}
 
+@media only screen and (max-width: 700px) {
+  .header-text {
+    margin-top: 50%;
+    font-size: 24px;
+  }
+  .header-text h1 {
+    font-size: 40px;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #0ea7ee;
+    position: fixed;
+    top:0;
+    right:-200px;
+    width:200px;
+    height:100vh;
+    padding-top:50px;
+    z-index:2;
+  }
+  nav ul li{
+    display:block;
+    margin:25px;
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top:25px;
+    left:25px;
+    cursor:pointer;
+  }
 
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1,.about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .tab-links{
+    font-size: 20px;
+    margin-right:20px;
+  }
 
+  .contact-left,.contact-right{
+    flex-basis: 100%;
+  }
 
-
+  .copyright{
+    font-size: 18px;
+  }
+}
 
