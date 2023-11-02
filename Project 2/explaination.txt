@@ -1,0 +1,84 @@
+<-----------Grid Explaination of My services------------->
+
+*The CSS code you've provided styles an element with the class .services-list and uses CSS Grid properties to create a responsive grid layout for a list of services. Let's break down how this code works:
+
+
+
+display: grid;:
+This line sets the display property of the .services-list element to grid. This property turns the element into a grid container, allowing you to use CSS Grid layout features.
+
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));:
+This line defines the columns of the grid. It uses the grid-template-columns property to specify how columns should be created. Here's what each part does:
+
+repeat(auto-fit, minmax(250px, 1fr)): This part creates a flexible grid structure.
+auto-fit tells the grid to automatically fit as many columns as possible within the available space.
+minmax(250px, 1fr) sets the minimum and maximum width for each column.
+250px is the minimum width. Each column will be at least 250 pixels wide.
+1fr is the maximum width. Each column can expand and take up available space, distributing it evenly within the container.
+This combination of auto-fit and minmax ensures that you have a responsive grid where columns adjust based on the available space, maintaining a minimum width of 250 pixels and evenly distributing any extra space among the columns.
+
+grid-gap: 40px;:
+This line sets a gap of 40 pixels between grid items. This space acts as a margin between the items in the grid, making the layout more visually appealing.
+
+margin-top: 50px;:
+This line adds a top margin of 50 pixels to the .services-list container, pushing it down from the element above it. This creates some spacing between this grid and the content above it.
+
+In summary, this CSS code creates a responsive grid layout for the .services-list element. It adjusts the number of columns based on the available space, with a minimum width of 250 pixels for each column and evenly distributes any extra space. The 40-pixel gap between items and the 50-pixel top margin provide spacing and make the layout visually attractive.
+
+<---------------Grid Explaination End-------------->
+
+<---------------Grid Scripting Explaination------------------->
+
+function opentab(tabname) {
+    for (const tablink of tablinks) {
+        tablink.classList.remove('active-link')
+    }
+    for (const tabcontent of tabcontents) {
+        tabcontent.classList.remove('active-tab')
+    }
+    event.currentTarget.classList.add('active-link')
+    document.getElementById(tabname).classList.add('active-tab');
+}
+
+ Here is how it is working
+The code you've provided is a JavaScript function called opentab that appears to be designed to handle tabbed content. It seems like it's part of a tabbed interface where users can click on tab links to display different content in a designated tab.
+
+Let's break down how this function works step by step:
+
+Function Definition:
+You've defined a function called opentab which takes one argument, tabname. This argument represents the name of the tab (or tab content) that you want to open.
+
+Removing Active Classes:
+In the first part of the function, it loops through all the elements with the class name tablinks and removes the class active-link from each of them. It also does the same for elements with the class name tabcontents by removing the active-tab class. This is usually done to reset the state and remove any previously active tabs.
+
+Adding Active Classes:
+After removing the active classes from all the tab links and content, it then adds the active-link class to the element that triggered the function, which is represented by event.currentTarget. This is typically the tab link that the user clicked, indicating that it is the currently active tab.
+
+Displaying the Selected Tab Content:
+Finally, it uses document.getElementById(tabname) to select the tab content with the id matching the tabname provided as an argument to the function. It then adds the active-tab class to this selected tab content, which typically makes it visible and activates it.
+
+In summary, this function is designed to switch between tabs by adding and removing CSS classes to control the visibility and appearance of the tab links and their associated content. It uses the active-link and active-tab classes to indicate which tab is currently active and display the corresponding content. To use this function, you would typically call it when a user clicks on a tab link, passing the tabname as an argument to specify which tab should be opened.
+
+<--------------Grid Scripting Explaination End------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
