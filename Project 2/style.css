@@ -4,6 +4,9 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #73060600;
@@ -382,11 +385,11 @@ nav .fa-solid{
 
 @media only screen and (max-width: 700px) {
   .header-text {
-    margin-top: 50%;
+    margin-top: 40%;
     font-size: 24px;
   }
   .header-text h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   nav .fa-solid{
     display: block;
@@ -434,5 +437,12 @@ nav .fa-solid{
   .copyright{
     font-size: 18px;
   }
+}
+
+/* Contact form submission */
+#msg{
+  color:#ff004f;
+  margin-top: -10px;
+  display: block;
 }
 
