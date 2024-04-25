@@ -4,7 +4,7 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -77,6 +77,9 @@ nav ul li a:hover::after {
 }
 /* Header CSS ends Here */
 /* About CSS starts Here */
+.image1 {
+  filter: drop-shadow(10px 7px 20px orange);
+}
 #about {
   padding: 80px 0;
   color: black;
@@ -114,7 +117,7 @@ nav ul li a:hover::after {
 }
 
 .about-col-2 p {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .tab-titles {
@@ -197,17 +200,25 @@ nav ul li a:hover::after {
   margin-bottom: 15px;
 }
 
-.services-list div a {
+.services-list div p {
+  font-size: 0.9rem;
+  font-style:normal;
+  font-weight: lighter;
+}
+
+/* .services-list div a {
   text-decoration: none;
-  color: rgb(3, 80, 156);
+  color: rgb(247, 0, 0);
   font-size: 16px;
   margin-top: 20px;
   display: inline-block;
-}
+} */
+
 
 .services-list div:hover {
-  background-color: #3399ff;
+  background-image: linear-gradient(135deg, #003c77, #69ccfe);
   transform: translateY(-10px);
+  color: white;
 }
 /* ------------------------ */
 /* Portfolio section css */
@@ -379,8 +390,8 @@ form .btn2 {
 }
 
 /* ----------------CSS for small screen--------------------- */
-nav .fa-solid{
- display: none;
+nav .fa-solid {
+  display: none;
 }
 
 @media only screen and (max-width: 700px) {
@@ -391,58 +402,59 @@ nav .fa-solid{
   .header-text h1 {
     font-size: 30px;
   }
-  nav .fa-solid{
+  nav .fa-solid {
     display: block;
     font-size: 25px;
   }
   nav ul {
     background: #0ea7ee;
     position: fixed;
-    top:0;
-    right:-200px;
-    width:200px;
-    height:100vh;
-    padding-top:50px;
-    z-index:2;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
   }
-  nav ul li{
-    display:block;
-    margin:25px;
+  nav ul li {
+    display: block;
+    margin: 25px;
   }
-  nav ul .fa-solid{
+  nav ul .fa-solid {
     position: absolute;
-    top:25px;
-    left:25px;
-    cursor:pointer;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
   }
 
-  .sub-title{
+  .sub-title {
     font-size: 40px;
   }
-  .about-col-1,.about-col-2{
+  .about-col-1,
+  .about-col-2 {
     flex-basis: 100%;
   }
-  .about-col-1{
+  .about-col-1 {
     margin-bottom: 30px;
   }
-  .tab-links{
+  .tab-links {
     font-size: 20px;
-    margin-right:20px;
+    margin-right: 20px;
   }
 
-  .contact-left,.contact-right{
+  .contact-left,
+  .contact-right {
     flex-basis: 100%;
   }
 
-  .copyright{
+  .copyright {
     font-size: 18px;
   }
 }
 
 /* Contact form submission */
-#msg{
-  color:#ff004f;
+#msg {
+  color: #ff004f;
   margin-top: -10px;
   display: block;
 }
-

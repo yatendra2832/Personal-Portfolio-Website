@@ -49,21 +49,31 @@
               alt="userImage"
               width="300px"
               height="400px"
+              class="image1"
             />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title animated-text">About Me</h1>
             <!-- <div class="animated-border"></div> -->
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              exercitationem dicta qui commodi ab facilis consequuntur
-              consequatur soluta assumenda nemo deleniti, delectus quis
-              perspiciatis voluptate, minima quam sequi quia. Ipsa vero modi nam
-              aliquid velit, eveniet odit inventore aliquam tempora natus minus,
-              placeat molestiae voluptate ratione qui optio veniam culpa
-              deserunt quas ut reprehenderit, et esse. Culpa a accusamus dolores
-              ullam esse sapiente
+              I'm passionate about learning how the web functions from end to
+              end - understanding what happens behind the scenes when we
+              interact with websites. This curiosity has been the driving force
+              behind my journey into UI/UX design and web development.
             </p>
+            <p>
+              One of the most memorable experiences in my career was working on
+              my "Healthify" project. It was a MERN stack-based project, marking
+              my first full-stack application. This project not only challenged
+              me but also solidified my passion for web development.
+            </p>
+            <p>
+              In my work as a designer and developer, I prioritize continuous
+              learning and staying updated with new technologies. I believe in
+              the importance of efficiency and effectiveness in every project I
+              undertake.
+            </p>
+
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
@@ -100,11 +110,11 @@
             </div>
             <div class="tab-contents" id="education">
               <ul>
+                <li></li>
                 <li>
-                  <span>2016</span><br />UI/UX Design Training at ET Institute
+                  <span>Present</span><br />Diploma in Information Technology at
+                  Government Polytechnic Ghaziabad
                 </li>
-                <li><span>2016</span><br />MBA from MIT Bangalore</li>
-                <li><span>2014</span><br />BBA from ISM Banglore</li>
               </ul>
             </div>
           </div>
@@ -113,7 +123,7 @@
     </div>
     <!-- About Section Closed -->
     <!-- Service Section Start -->
-    <div id="services">
+    <!-- <div id="services">
       <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
@@ -149,7 +159,46 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I specialize in crafting visually appealing and user-friendly
+              websites tailored to your needs. Whether you're starting from
+              scratch or looking to revamp your existing site, I'll ensure a
+              seamless and engaging online experience for your audience.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Elevate your digital presence with intuitive and elegant user
+              interfaces. From wireframing to prototyping, I focus on creating
+              designs that not only look stunning but also prioritize user
+              satisfaction and usability.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Transform your app idea into a visually stunning reality. I
+              specialize in designing mobile applications that are both
+              aesthetically pleasing and functionally robust. Let's work
+              together to create an app that stands out in the crowded digital
+              marketplace.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!-- Services Section End -->
     <!-- Portfolio -->
     <div id="portfolio">
@@ -220,11 +269,12 @@
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
-            <a href="/Project 2/Resume.png" download class="btn btn2">Download CV</a>
-            
+            <a href="/Project 2/Resume.png" download class="btn btn2"
+              >Download CV</a
+            >
           </div>
           <div class="contact-right">
-            <form  name="submit-to-google-sheet">
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -247,29 +297,32 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright © Yatendra . Made by Yatendra Yadav <i class="fa-solid fa-code"></i>
-          </p>
+        <p>
+          Copyright © Yatendra . Made by Yatendra Yadav
+          <i class="fa-solid fa-code"></i>
+        </p>
       </div>
     </div>
     <!-- Contact Form End -->
-    <script src="/Project 2/index.js"></script> 
+    <script src="/Project 2/index.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxprwmiX3k5KYkZaLhWF8jAVBvC33O5ab7jl74IMRP-J1EyGGmH_qLzi13XvnYVz-d3/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      const msg = document.getElementById("msg")
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response =>{
-            msg.innerHTML="Message Sent Successfully"
-            setTimeout(()=>{
-              msg.innerHTML=""
-            },5000)
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxprwmiX3k5KYkZaLhWF8jAVBvC33O5ab7jl74IMRP-J1EyGGmH_qLzi13XvnYVz-d3/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
             form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
